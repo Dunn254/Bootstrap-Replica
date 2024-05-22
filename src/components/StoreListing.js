@@ -3,6 +3,10 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
+import instapic from '../images/instapic.jpg';
+import aldi from '../images/aldi.png';
+import kroger from '../images/kroger.jpg';
+import sprouts from '../images/sprouts.png';
 
 
 function StoreListing() {
@@ -13,7 +17,7 @@ return (
     <Row style={{ borderBottom: "1px solid #E8E9EB", display: "flex", justifyContent: "space-evenly"}} >
         <Row>
             <Col xs=".5" >
-                <Image src="../images/instapic.jpg" roundedCircle />
+                <Image src={aldi} roundedCircle />
             </Col>
             <Col>
                 <h5 style={{ fontWeight: "bold" }}>ALDI</h5>
@@ -23,7 +27,7 @@ return (
         <Col sm="1"></Col>
         <Row >
             <Col xs=".5">
-                <Image src="../images/instapic.jpg" roundedCircle />
+                <Image src={sprouts} roundedCircle />
             </Col>
             <Col>
                 <h5 style={{ fontWeight: "bold" }}>Sprouts Farmers Market</h5>
@@ -33,7 +37,7 @@ return (
         <Col sm="1"></Col>
         <Row >
             <Col xs=".5" >
-                <Image src="../images/instapic.jpg" roundedCircle />
+                <Image src={kroger} roundedCircle />
             </Col>
             <Col md="6">
                 <h5 style={{ fontWeight: "bold" }}>Kroger</h5>
